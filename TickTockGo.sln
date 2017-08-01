@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickTockGo", "TickTockGo\TickTockGo.csproj", "{465330E2-D37E-42B6-843C-6528E4FA8E6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Release|iPhone.Build.0 = Release|iPhone
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{465330E2-D37E-42B6-843C-6528E4FA8E6E}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
