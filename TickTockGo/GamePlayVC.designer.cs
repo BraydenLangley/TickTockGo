@@ -39,6 +39,21 @@ namespace TickTockGo
 		[Outlet]
 		UIKit.UIButton cell9 { get; set; }
 
+		[Outlet]
+		UIKit.UILabel player1 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel player2 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel upperLabel { get; set; }
+
+		[Outlet]
+		UIKit.UILabel winsForPlayer1 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel winsForPlayer2 { get; set; }
+
 		[Action ("Claim:")]
 		partial void Claim (Foundation.NSObject sender);
 
@@ -90,6 +105,31 @@ namespace TickTockGo
 			if (cell9 != null) {
 				cell9.Dispose ();
 				cell9 = null;
+			}
+
+			if (upperLabel != null) {
+				upperLabel.Dispose ();
+				upperLabel = null;
+			}
+
+			if (player1 != null) {
+				player1.Dispose ();
+				player1 = null;
+			}
+
+			if (player2 != null) {
+				player2.Dispose ();
+				player2 = null;
+			}
+
+			if (winsForPlayer2 != null) {
+				winsForPlayer2.Dispose ();
+				winsForPlayer2 = null;
+			}
+
+			if (winsForPlayer1 != null) {
+				winsForPlayer1.Dispose ();
+				winsForPlayer1 = null;
 			}
 		}
 	}

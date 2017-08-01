@@ -51,30 +51,30 @@ namespace TickTockGo
 			this.NavigationController.NavigationBar.ShadowImage = new UIImage();
         }
 
-        partial void claim(Foundation.NSObject sender)
-        {
-            UIButton cell = sender as UIButton;
-            string id = cell.Tag.ToString();
+   //     partial void claim(Foundation.NSObject sender)
+   //     {
+   //         UIButton cell = sender as UIButton;
+   //         string id = cell.Tag.ToString();
 
-            computerAI.Set(Int32.Parse(id), false);
-            computerAI.AIturn(grid, 0, true, true);
-        }
+   //         computerAI.Set(Int32.Parse(id), false);
+   //         computerAI.AIturn(grid, 0, true, true);
+   //     }
 
-        partial void Reset(Foundation.NSObject sender)
-        {
-			grid = new int[]
-    		{    0,0,0,
-    			 0,0,0,
-    			 0,0,0
-    		};
+   //     partial void Reset(Foundation.NSObject sender)
+   //     {
+			//grid = new int[]
+    		//{    0,0,0,
+    		//	 0,0,0,
+    		//	 0,0,0
+    		//};
 
-            for (var x = 0; x < cells.Length; x++)
-            {
-                cells[x].SetImage(UIImage.FromBundle(""), UIControlState.Normal);
-            }
+        //    for (var x = 0; x < cells.Length; x++)
+        //    {
+        //        cells[x].SetImage(UIImage.FromBundle(""), UIControlState.Normal);
+        //    }
 
-            computerAI = new AI(cells, grid);
-        }
+        //    computerAI = new AI(cells, grid, this);
+        //}
 
         public override void DidReceiveMemoryWarning()
         {

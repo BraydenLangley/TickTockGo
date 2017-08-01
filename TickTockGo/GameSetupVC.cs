@@ -10,8 +10,6 @@ namespace TickTockGo
         public string Variation { get; set; }
         string _opponentSkillLevel;
 
-        UIButton selectedLevel;
-
         protected GameSetupVC(IntPtr handle) : base(handle)
         {
 			// Note: this .ctor should not contain any initialization logic.
@@ -108,15 +106,12 @@ namespace TickTockGo
                 dv.OpponentSkillLevel = _opponentSkillLevel;
                 dv.Variation = Variation; // Should this be refactored to use a member variable?
 
-                if (NumberOfPlayers == 1)
-                {
-					dv.Players = new string[] { playerName1.Text};
-				}
-                else
-                {
-					dv.Players = new string[] { playerName1.Text, playerName2.Text }; // Refactor this code. 
-				}
+                dv.Players.Add(playerName1.Text);
 
+                if (NumberOfPlayers == 2)
+                {
+                    dv.Players.Add(playerName2.Text); // Refactor this code. 
+				}
 			}
         }
     }
