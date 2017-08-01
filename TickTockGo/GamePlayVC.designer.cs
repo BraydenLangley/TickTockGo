@@ -1,21 +1,96 @@
-﻿// WARNING
+// WARNING
 //
-// This file has been generated automatically by Xamarin Studio from the outlets and
-// actions declared in your storyboard file.
-// Manual changes to this file will not be maintained.
+// This file has been generated automatically by Visual Studio to store outlets and
+// actions made in the UI designer. If it is removed, they will be lost.
+// Manual changes to this file may not be handled correctly.
 //
 using Foundation;
-using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace TickTockGo
 {
-    [Register("GamePlayVC")]
-    partial class GamePlayVC
-    {
-        void ReleaseDesignerOutlets()
-        {
-        }
-    }
+	[Register ("GamePlayVC")]
+	partial class GamePlayVC
+	{
+		[Outlet]
+		UIKit.UIButton cell1 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell2 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell3 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell4 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell5 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell6 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell7 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell8 { get; set; }
+
+		[Outlet]
+		UIKit.UIButton cell9 { get; set; }
+
+		[Action ("Claim:")]
+		partial void Claim (Foundation.NSObject sender);
+
+		[Action ("Reset:")]
+		partial void Reset (Foundation.NSObject sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (cell1 != null) {
+				cell1.Dispose ();
+				cell1 = null;
+			}
+
+			if (cell2 != null) {
+				cell2.Dispose ();
+				cell2 = null;
+			}
+
+			if (cell3 != null) {
+				cell3.Dispose ();
+				cell3 = null;
+			}
+
+			if (cell4 != null) {
+				cell4.Dispose ();
+				cell4 = null;
+			}
+
+			if (cell5 != null) {
+				cell5.Dispose ();
+				cell5 = null;
+			}
+
+			if (cell6 != null) {
+				cell6.Dispose ();
+				cell6 = null;
+			}
+
+			if (cell7 != null) {
+				cell7.Dispose ();
+				cell7 = null;
+			}
+
+			if (cell8 != null) {
+				cell8.Dispose ();
+				cell8 = null;
+			}
+
+			if (cell9 != null) {
+				cell9.Dispose ();
+				cell9 = null;
+			}
+		}
+	}
 }
