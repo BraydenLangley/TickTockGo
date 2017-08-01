@@ -400,7 +400,7 @@
                                         <color key="textColor" red="0.74619289340101524" green="0.74619289340101524" blue="0.74619289340101524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m2-dr-5SH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m2-dr-5SH">
                                         <rect key="frame" x="43" y="74" width="75" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -414,7 +414,7 @@
                                         <color key="textColor" red="0.74619289339999995" green="0.74619289339999995" blue="0.74619289339999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-gM-srf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-gM-srf">
                                         <rect key="frame" x="257" y="73" width="75" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -473,6 +473,11 @@
                         <outlet property="cell7" destination="sQM-pV-1Zy" id="n58-KB-9QF"/>
                         <outlet property="cell8" destination="vhF-Aw-MRM" id="m22-DL-nPR"/>
                         <outlet property="cell9" destination="zU8-ek-Hbg" id="Zzc-bS-hbF"/>
+                        <outlet property="player1" destination="kAL-bJ-Ytc" id="1fk-7W-Dfc"/>
+                        <outlet property="player2" destination="mQC-vM-ojU" id="HAE-Nz-K1q"/>
+                        <outlet property="upperLabel" destination="Gqt-vb-ie3" id="s6b-zA-qTi"/>
+                        <outlet property="winsForPlayer1" destination="9m2-dr-5SH" id="bTQ-7I-AAx"/>
+                        <outlet property="winsForPlayer2" destination="6OS-gM-srf" id="sze-RV-S38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV1-zv-YSd" sceneMemberID="firstResponder"/>
