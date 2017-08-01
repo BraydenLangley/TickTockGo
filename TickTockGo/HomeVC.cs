@@ -4,7 +4,7 @@ using UIKit;
 
 namespace TickTockGo
 {
-    public partial class ViewController : UIViewController
+    public partial class HomeVC : UIViewController
     {
         UIButton[] cells;
 
@@ -16,10 +16,29 @@ namespace TickTockGo
 
         AI computerAI;
 
-        protected ViewController(IntPtr handle) : base(handle)
+        protected HomeVC(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+
+            var dv = segue.DestinationViewController as VariationVC;
+
+			if (dv != null)
+			{
+                if (segue.Identifier == "onePlayer")
+                {
+                    dv.NumberOfPlayers = 1;
+                }
+    			if (segue.Identifier == "twoPlayer")
+    			{
+    				dv.NumberOfPlayers = 2;
+    			}
+			}
+		}
 
         public override void ViewDidLoad()
         {

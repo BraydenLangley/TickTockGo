@@ -9,7 +9,7 @@ using System.CodeDom.Compiler;
 
 namespace TickTockGo
 {
-	[Register ("ViewController")]
+	[Register ("HomeVC")]
 	partial class HomeVC
 	{
 		[Outlet]

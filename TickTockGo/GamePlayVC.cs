@@ -6,9 +6,10 @@ namespace TickTockGo
 {
     public partial class GamePlayVC : UIViewController
     {
-        public GamePlayVC() : base("GamePlayVC", null)
+        protected GamePlayVC(IntPtr handle) : base(handle)
         {
-        }
+			// Note: this .ctor should not contain any initialization logic.
+		}
 
         public override void ViewDidLoad()
         {

@@ -139,9 +139,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="HomeVC.cs" />
+    <Compile Include="HomeVC.designer.cs">
+      <DependentUpon>HomeVC.cs</DependentUpon>
     </Compile>
     <Compile Include="AI.cs" />
     <Compile Include="GameSetupVC.cs" />
