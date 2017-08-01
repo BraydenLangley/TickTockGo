@@ -14,7 +14,10 @@ namespace TickTockGo
 			// Note: this .ctor should not contain any initialization logic.
 		}
 
-        public override void ViewDidLoad()
+		/// <summary>
+		/// When the view loads.
+		/// </summary>
+		public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
@@ -22,6 +25,10 @@ namespace TickTockGo
             _variations = new string[] { "Normal", "Fading Moves", "Rotating Platform", "Bracket Breakdown"};
         }
 
+        /// <summary>
+        /// Loads the next view.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
         partial void NextView(Foundation.NSObject sender)
         {
             UIStoryboard mainStoryboard = UIStoryboard.FromName("Main", null);
@@ -42,12 +49,6 @@ namespace TickTockGo
             gsVC.Variation = _variations[choosenButton.Tag];
 
             this.NavigationController.PushViewController(gsVC, true);
-        }
-
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
         }
     }
 }
