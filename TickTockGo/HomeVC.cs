@@ -49,20 +49,6 @@ namespace TickTockGo
 			this.NavigationController.View.BackgroundColor = UIColor.Clear;
 			this.NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
 			this.NavigationController.NavigationBar.ShadowImage = new UIImage();
-
-            cells = new UIButton[] {
-                cell1Outlet,
-                cell2Outlet,
-                cell3Outlet,
-                cell4Outlet,
-                cell5Outlet,
-                cell6Outlet,
-                cell7Outlet,
-                cell8Outlet,
-                cell9Outlet
-            };
-
-            computerAI = new AI(cells, grid);
         }
 
         partial void claim(Foundation.NSObject sender)
