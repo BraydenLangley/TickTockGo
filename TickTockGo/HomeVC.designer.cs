@@ -10,7 +10,7 @@ using System.CodeDom.Compiler;
 namespace TickTockGo
 {
 	[Register ("ViewController")]
-	partial class ViewController
+	partial class HomeVC
 	{
 		[Outlet]
 		UIKit.UIButton cell1Outlet { get; set; }
