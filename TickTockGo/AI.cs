@@ -4,21 +4,17 @@ namespace TickTockGo
 {
     public class AI
     {
-        public AI(UIButton[] cells, int[] grid)
+        public AI(UIButton[] cells, int[] grid, GamePlayVC gamePlayVC)
         {
             _cells = cells;
             _grid = grid;
+            _gamePlayVC = gamePlayVC;
         }
 
-        //static int bestMove;
+        GamePlayVC _gamePlayVC;
 
         UIButton[] _cells;
-
-		int [] _grid =
-		{    0,0,0,
-			 0,0,0,
-			 0,0,0
-		};
+        int[] _grid;
 		bool game = true;
 
 		bool Human = false;
@@ -86,6 +82,8 @@ namespace TickTockGo
 				if (CheckWin(_grid, player) || CheckFull(_grid))
 				{
 					game = false;
+                    _gamePlayVC.GameOver = true;
+                    _gamePlayVC.WinningPlayer = player;
 				}
 			}
 		}
