@@ -112,6 +112,8 @@
     <ImageAsset Include="Assets.xcassets\FadingMoves.imageset\Fading Moves.png" />
     <ImageAsset Include="Assets.xcassets\RotatingPlatform.imageset\Rotating Platform.png" />
     <ImageAsset Include="Assets.xcassets\BracketBreakdown.imageset\Bracket Breakdown.png" />
+    <ImageAsset Include="Assets.xcassets\GamePlayIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\GamePlayIcon.imageset\spartan-helmet.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -127,6 +129,7 @@
     <Folder Include="Assets.xcassets\FadingMoves.imageset\" />
     <Folder Include="Assets.xcassets\RotatingPlatform.imageset\" />
     <Folder Include="Assets.xcassets\BracketBreakdown.imageset\" />
+    <Folder Include="Assets.xcassets\GamePlayIcon.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
