@@ -40,6 +40,12 @@ namespace TickTockGo
 		UIKit.UIButton cell9 { get; set; }
 
 		[Outlet]
+		UIKit.UILabel currentPlayerLeft { get; set; }
+
+		[Outlet]
+		UIKit.UILabel currentPlayerRight { get; set; }
+
+		[Outlet]
 		UIKit.UILabel player1 { get; set; }
 
 		[Outlet]
@@ -130,6 +136,16 @@ namespace TickTockGo
 			if (winsForPlayer1 != null) {
 				winsForPlayer1.Dispose ();
 				winsForPlayer1 = null;
+			}
+
+			if (currentPlayerLeft != null) {
+				currentPlayerLeft.Dispose ();
+				currentPlayerLeft = null;
+			}
+
+			if (currentPlayerRight != null) {
+				currentPlayerRight.Dispose ();
+				currentPlayerRight = null;
 			}
 		}
 	}
