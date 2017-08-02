@@ -48,7 +48,9 @@ namespace TickTockGo
             gsVC.NumberOfPlayers = NumberOfPlayers;
             gsVC.Variation = _variations[choosenButton.Tag];
 
-            this.NavigationController.PushViewController(gsVC, true);
+            //this.NavigationController.PushViewController(gsVC, true);
+            this.NavigationController.ModalTransitionStyle = UIModalTransitionStyle.CoverVertical;
+            this.NavigationController.PresentViewController(gsVC, true, null);
         }
     }
 }
