@@ -27,6 +27,12 @@ namespace TickTockGo
 		[Outlet]
 		UIKit.UITextField playerName2 { get; set; }
 
+		[Outlet]
+		UIKit.UIButton SelectVariationButton { get; set; }
+
+		[Outlet]
+		UIKit.UIView variationView { get; set; }
+
 		[Action ("Easy:")]
 		partial void Easy (Foundation.NSObject sender);
 
@@ -35,9 +41,39 @@ namespace TickTockGo
 
 		[Action ("Medium:")]
 		partial void Medium (Foundation.NSObject sender);
+
+		[Action ("SelectBracket:")]
+		partial void SelectBracket (Foundation.NSObject sender);
+
+		[Action ("SelectFading:")]
+		partial void SelectFading (Foundation.NSObject sender);
+
+		[Action ("SelectNormal:")]
+		partial void SelectNormal (Foundation.NSObject sender);
+
+		[Action ("SelectRotating:")]
+		partial void SelectRotating (Foundation.NSObject sender);
+
+		[Action ("SelectVariation:")]
+		partial void SelectVariation (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (easyButton != null) {
+				easyButton.Dispose ();
+				easyButton = null;
+			}
+
+			if (hardButton != null) {
+				hardButton.Dispose ();
+				hardButton = null;
+			}
+
+			if (mediumButton != null) {
+				mediumButton.Dispose ();
+				mediumButton = null;
+			}
+
 			if (playerName1 != null) {
 				playerName1.Dispose ();
 				playerName1 = null;
@@ -48,19 +84,14 @@ namespace TickTockGo
 				playerName2 = null;
 			}
 
-			if (easyButton != null) {
-				easyButton.Dispose ();
-				easyButton = null;
+			if (variationView != null) {
+				variationView.Dispose ();
+				variationView = null;
 			}
 
-			if (mediumButton != null) {
-				mediumButton.Dispose ();
-				mediumButton = null;
-			}
-
-			if (hardButton != null) {
-				hardButton.Dispose ();
-				hardButton = null;
+			if (SelectVariationButton != null) {
+				SelectVariationButton.Dispose ();
+				SelectVariationButton = null;
 			}
 		}
 	}

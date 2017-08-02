@@ -114,6 +114,44 @@ namespace TickTockGo
 				}
 			}
         }
+
+        partial void SelectVariation(Foundation.NSObject sender)
+        {
+            if (variationView.Hidden == false)
+            {
+                variationView.Hidden = true;
+            }
+            else
+            {
+                variationView.Hidden = false;
+            }
+        }
+
+        partial void SelectNormal(Foundation.NSObject sender)
+        {
+            Variation = "Normal";
+            variationView.Hidden = true;
+            SelectVariationButton.SetTitle(Variation, UIControlState.Normal);
+        }
+
+        partial void SelectFading(Foundation.NSObject sender)
+        {
+            Variation = "Fading Moves";
+            variationView.Hidden = true;
+            SelectVariationButton.SetTitle(Variation, UIControlState.Normal);
+        }
+        partial void SelectRotating(Foundation.NSObject sender)
+        {
+            Variation = "Rotating Platform";
+            variationView.Hidden = true;
+            SelectVariationButton.SetTitle(Variation, UIControlState.Normal);
+        }
+        partial void SelectBracket(Foundation.NSObject sender)
+        {
+			Variation = "Bracket Breakdown";
+			variationView.Hidden = true;
+			SelectVariationButton.SetTitle(Variation, UIControlState.Normal);
+        }
     }
 }
 
